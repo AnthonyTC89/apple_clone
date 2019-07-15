@@ -1,0 +1,74 @@
+/* base styles */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; 
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  color: black;
+  box-sizing: border-box; 
+}
+
+/* First Section */
+.main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+
+}
+
+.nav-bar{
+    margin-top: 0.8rem;
+}
+.main-header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    line-height: 1.8rem;
+}
+
+.main-header>div{
+    text-align: center;
+    margin: 5rem auto;
+    width: 60%;
+}
+
+.main-header>div>h2{
+    font-size: 3.2rem;
+    margin-bottom: 1.8rem;
+    font-weight: lighter;
+}
+
+.main-header>img{
+    position: absolute;
+    top:-50%
+}
+
+.main-header>div>p{
+    font-size: 1.1rem;
+    font-weight: lighter;
+}
+
+.main-header>div>h3{
+    font-size: 1.1rem;
+    font-weight: lighter;
+    margin: 1rem auto;
+}
+
+    
+.main-header>div>img{
+    position: relative;
+}
+
+
+.background-image{
+    position: absolute;
+    z-index: -999;
+}
