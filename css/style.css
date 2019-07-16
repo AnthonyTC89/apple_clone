@@ -129,10 +129,13 @@ footer{
 }
 
 .info2{
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
     width: 60rem;
-    margin: 0.7rem auto;
+    margin-top: 3rem;
+    margin-bottom: 0.7rem;
+    margin-right: auto;
+    margin-left: auto;
     justify-content: center;
 }
 
