@@ -1,6 +1,6 @@
 /* base styles */
 html{
-    overflow-x: hidden;
+    
 }
 *{
   margin: 0;
@@ -33,6 +33,70 @@ footer{
 
 .nav-bar{
     margin-top: 0.8rem;
+    display: inline-flex;
+    border: 0.5px solid #585858;
+    border-radius: .2rem;
+}
+
+.nav-bar>ul{
+    list-style: none;
+    display: inline-flex;
+}
+
+.nav-bar>ul>li{
+    display: block;
+    padding: 0.3rem 2rem;
+    background: #808080;
+    background: linear-gradient(#808080,#808080, #4D4D4D,#4D4D4D);
+    border-right: 0.5px solid #585858;
+}
+
+.nav-bar>ul>li:nth-child(6){
+    background: radial-gradient(#111111, #393939);
+}
+
+.nav-bar>ul>li:hover{
+    cursor: pointer;
+    background: linear-gradient(#575757,#575757, #252525,#252525)
+}
+.nav-bar>ul>li:last-child{
+    border-right: none;
+    background: linear-gradient(#808080,#808080, #4D4D4D,#4D4D4D);
+    cursor: default;
+}
+
+.nav-bar>ul>li:nth-child(6):hover{
+    background: radial-gradient(#111111, #393939);
+}
+.nav-bar>ul>li>a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: .8rem;
+    font-weight: 100;
+}
+.nav-bar>ul>li>a>img{
+    display: block;
+    margin-top: .1rem;
+    background: linear-gradient(#858585,#858585, #767676,#767676);
+}
+
+.nav-bar>ul>li>input{
+    display: flex;
+    background: none;
+    border-top: .5px solid #4a4a4a;
+    border-bottom: .5px solid #878787;
+    border-radius: 10px;
+    border-right: .2px solid #4a4a4a;
+    border-left: .2px solid #4a4a4a;
+    padding-left: 1rem;
+    margin-top: .4rem;
+    width: 5rem;
+    transition: width 0.4s ease-in-out;
+}
+.nav-bar>ul>li>input:focus{
+    background: white;
+    outline:none;
+    width: 10rem;
 }
 .main-header{
     position: relative;
