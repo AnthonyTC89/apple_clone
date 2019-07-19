@@ -1,93 +1,192 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/style.css">
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-    <body>
-        <nav>
-            <img src="images/navbar.png" alt="navbar">
+<body>
+    <main>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="#"> <img class="apple-img" src="images/apple.png"> </a></li>
+                <li><a href="#"> Store </a></li>
+                <li><a href="#"> Mac </a></li>
+                <li><a href="#"> iPod </a></li>
+                <li><a href="#"> iPhone </a></li>
+                <li><a href="#"> iPad </a></li>
+                <li><a href="#"> iTunes </a></li>
+                <li><a href="#"> Support </a></li>
+                <li><img class="search-icon" src="images/searchicon.png"> <input type="text"></li>
+            </ul>
         </nav>
-        <main>
-            <header>
-                <p>What will your verse be?</p>
-                <p>Each of us has something to share. A voice, a passion, a perspective. The potential to add a stanza to
-                    the world's story. We were so inspired by how people use iPad every day, we set out to capture a few of
-                    these moments.</p>
-                <p>Watch "Your Verse" and explore some stories from it below.</p>
-                <img src="images/play.png" alt="play">
-            </header>
-            <section class="info1" id="expedition_hero">
-                <p class="info1-title">Elevating the expedition</p>
-                <p class="info1-text">World-class mountaineers Emily Harrington and Adrian Ballinger have climbed some of
-                    the highest peaks in the world, from Mount Everest to Mont Blanc. They use iPad and the Gaia GPS app to
-                    help them plan routes, summit safely, and share their adventures with the world.</p>
-                <a href="#">Explore this story ></a>
-            </section>
-            <section class="info1" id="newdepths_hero">
-                <p class="info1-title">Elevating the expedition</p>
-                <p class="info1-text">World-class mountaineers Emily Harrington and Adrian Ballinger have climbed some of
-                    the highest peaks in the world, from Mount Everest to Mont Blanc. They use iPad and the Gaia GPS app to
-                    help them plan routes, summit safely, and share their adventures with the world.</p>
-                <a href="#">Explore this story ></a>
-            </section>
-            <section class="info2">
-                <div>
-                    <img src="images/bollywood_hero.jpg" alt="bollywood_hero">
-                    <div>
-                        <p class="info2-title"></p>Capturing a vision in Bolliwood</p>
-                        <p class="info2-place">Feroz Khan, Agra, India</p>
-                        <p class="info2-text">Feroz Khan, one of Bollywood’s top choreographers, uses iPad in many aspects
-                            of his production — from
-                            scouting locations to mixing music to framing each shot and refining every dance move. With
-                            iPad,
-                            Khan can quickly and easily share his vision with the director, dancers, and production team.
-                        </p>
-                        <p class="info2-app">Apps used: Artemis HD, SloPro, and FiLMiC Pro</p>
-                    </div>
-
+        <div class="main-header">
+            <a href="#">
+                <div class="background-image" id="hero">
+                    <img class="img-title" src="images/hero_title.png"> 
+                    <img class="img-text" src="images/hero_subhead.png">
+                    <img class="img-cta" src="images/hero_cta.png">
+                    <img class="img-double" src="images/play.png">
                 </div>
-                <div>
-                    <div>
-                        <img src="images/studio_hero.jpg"" alt=" studio_hero">
-                    </div>
-                    <div>
-                        <p class="info2-title"></p>Capturing a vision in Bolliwood</p>
-                        <p class="info2-place">Feroz Khan, Agra, India</p>
-                        <p class="info2-text">Feroz Khan, one of Bollywood’s top choreographers, uses iPad in many aspects
-                            of his production — from
-                            scouting locations to mixing music to framing each shot and refining every dance move. With
-                            iPad,
-                            Khan can quickly and easily share his vision with the director, dancers, and production team.
-                        </p>
-                        <p class="info2-app">Apps used: Artemis HD, SloPro, and FiLMiC Pro</p>
-                    </div>
-                    <a class="past-stories" href="#"> See past stories ></a>
+            </a>
+        </div>
+        <div class="info1">
+            <a href="#">
+                <div class="background-image" id="expedition_hero">
+                    <img class="img-title" src="images/expedition_title.png"> 
+                    <img class="img-text" src="images/expedition_subhead.png">
+                    <img class="img-double" src="images/cta_explore_white.png">
+                    
                 </div>
-            </section>
-            <section class="small-text">
-                <p>Los Angeles Kings name and logo are registered trademarks of the NHL team. NHL USA registered trademark
-                    of the National Hockey League. All rights reserved.</p>
-            </section>
-        </main>
-        <footer>
-            <div>
-                <img>
-                <p>HomeYour verse</p>
+            </a>
+        </div>
+        <div class="info1">
+            <a href="#">
+                <div class="background-image" id="newdepths_hero">
+                    <img class="img-title" src="images/newdepths_title.png"> 
+                    <img class="img-text" src="images/newdepths_subhead.png">
+                    <img class="img-double" src="images/cta_explore_white.png">
+                    
+                </div>
+            </a>
+        </div>
+        <section class="info2">
+            <div class="info2-left">
+                <img src="images/bollywood_hero.jpg" alt="bollywood_hero">
             </div>
-            <div>
-                <p>Shop the Apple Online Store (1-800-MY-APPLE), visit an Apple Retail Store, or find a reseller.</p>
+            <div class="info2-right">
+                <h2>Capturing a vision in Bolliwood</h2>
+                <small>Feroz Khan, Agra, India</small>
+                <p>Feroz Khan, one of Bollywood’s top choreographers, uses iPad in many aspects
+                    of his production — from
+                    scouting locations to mixing music to framing each shot and refining every dance move. With
+                    iPad,
+                    Khan can quickly and easily share his vision with the director, dancers, and production team.
+                </p>
+                <span>Apps used: Artemis HD, SloPro, and FiLMiC Pro</span>
             </div>
-            <div>
-                <p>Copyright © 2014 Apple Inc. All rights reserved.</p>
+        </section>
+        
+        <section class="info2">
+            <div class="info2-left">
+                <img src="images/studio_hero.jpg" alt="studio_hero">
             </div>
-        </footer>
-    </body>
+            <div class="info2-right">
+                <h2>Capturing a vision in Bolliwood</h2>
+                <small>Feroz Khan, Agra, India</small>
+                <p>Feroz Khan, one of Bollywood’s top choreographers, uses iPad in many aspects
+                    of his production — from
+                    scouting locations to mixing music to framing each shot and refining every dance move. With
+                    iPad,
+                    Khan can quickly and easily share his vision with the director, dancers, and production team.
+                </p>
+                <span>Apps used: Artemis HD, SloPro, and FiLMiC Pro</span>
+            </div>
+        </section>
+        <section class="info2">
+            <div class="info2-left">
+                <img src="images/bollywood_hero.jpg" alt="bollywood_hero">
+            </div>
+            <div class="info2-right">
+                <h2>Capturing a vision in Bolliwood</h2>
+                <small>Feroz Khan, Agra, India</small>
+                <p>Feroz Khan, one of Bollywood’s top choreographers, uses iPad in many aspects
+                    of his production — from
+                    scouting locations to mixing music to framing each shot and refining every dance move. With
+                    iPad,
+                    Khan can quickly and easily share his vision with the director, dancers, and production team.
+                </p>
+                <span>Apps used: Artemis HD, SloPro, and FiLMiC Pro</span>
+            </div>
+        </section>
+        <section class="info2">
+            <div class="info2-left">
+                <img src="images/studio_hero.jpg" alt="studio_hero">
+            </div>
+            <div class="info2-right">
+                <h2>Capturing a vision in Bolliwood</h2>
+                <small>Feroz Khan, Agra, India</small>
+                <p>Feroz Khan, one of Bollywood’s top choreographers, uses iPad in many aspects
+                    of his production — from
+                    scouting locations to mixing music to framing each shot and refining every dance move. With
+                    iPad,
+                    Khan can quickly and easily share his vision with the director, dancers, and production team.
+                </p>
+                <span>Apps used: Artemis HD, SloPro, and FiLMiC Pro</span>
+            </div>
+        </section>
+        <section class="info2">
+            <div class="info2-left">
+                <img src="images/bollywood_hero.jpg" alt="bollywood_hero">
+            </div>
+            <div class="info2-right">
+                <h2>Capturing a vision in Bolliwood</h2>
+                <small>Feroz Khan, Agra, India</small>
+                <p>Feroz Khan, one of Bollywood’s top choreographers, uses iPad in many aspects
+                    of his production — from
+                    scouting locations to mixing music to framing each shot and refining every dance move. With
+                    iPad,
+                    Khan can quickly and easily share his vision with the director, dancers, and production team.
+                </p>
+                <span>Apps used: Artemis HD, SloPro, and FiLMiC Pro</span>
+            </div>
+        </section>
+        <section class="info2">
+            <div class="info2-left">
+                <img src="images/studio_hero.jpg" alt="studio_hero">
+            </div>
+            <div class="info2-right">
+                <h2>Capturing a vision in Bolliwood</h2>
+                <small>Feroz Khan, Agra, India</small>
+                <p>Feroz Khan, one of Bollywood’s top choreographers, uses iPad in many aspects
+                    of his production — from
+                    scouting locations to mixing music to framing each shot and refining every dance move. With
+                    iPad,
+                    Khan can quickly and easily share his vision with the director, dancers, and production team.
+                </p>
+                <span>Apps used: Artemis HD, SloPro, and FiLMiC Pro</span>
+            </div>
+        </section>
+        
+        <section class="past-stories">
+            <a href="#">See past stories ></a>
+        </section>
 
+        <section class="small-text">
+            <p>Los Angeles Kings name and logo are registered trademarks of the NHL team. NHL USA registered trademark
+                of the National Hockey League. All rights reserved.</p>
+        </section> 
+    </main>
+    <footer>
+        <div class="footer-logo">
+            <a href="#"><img src="images/breadcrumb_home.png"> </a>
+            <p>Your verse</p>
+        </div>
+        <div class="footer-info">
+            <p>Shop the <a href="#">Apple Online Store</a> (1-800-MY-APPLE), 
+                visit an <a href="#">Apple Retail Store</a>, or find a 
+                <a href="#">reseller</a>.</p>
+            <ul class="footer-list">
+                <li><a href="#">Apple Info</a></li>
+                <li><a href="#">Site Map</a></li>
+                <li><a href="#">Hot News</a></li>
+                <li><a href="#">RSS Feeds</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#"><img src="images/usa_2x.png"> </a></li>
+            </ul>
+        </div>
+        <div class="footer-copyright">
+            <p>Copyright © 2014 Apple Inc. All rights reserved.</p>
+            <ul class="footer-list">
+                <li><a href="#">Term of Use</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </footer> 
+</body>
 </html>
