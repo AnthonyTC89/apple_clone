@@ -105,22 +105,19 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 1440px;
 }
 .background-image[id="hero"]{
-    padding-top: 9rem;
     background-image: url("../images/hero.jpg");
     height: 621px;
-    width: 1440px;
 }
 .background-image[id="expedition_hero"]{
     background-image: url("../images/expedition_hero.jpg");
     height: 578px;
-    width: 1440px;
 }
 .background-image[id="newdepths_hero"]{
     background-image: url("../images/newdepths_hero.jpg");
     height: 578px;
-    width: 1440px;
 }
 
 .background-image>img{
@@ -139,18 +136,26 @@ footer{
     margin:.1rem auto;
 }
 
-/* .box-play{
-    display: inline-block;
-    width: 70px;
-    height: 70px;
+.box-image{
     overflow: hidden;
+    text-align: center;
+    margin-top: 2rem;
 }
-.box-play>img:hover{
-    position: relative;
-    top: -100%;
-    cursor: pointer;
-} */
+.hero{
+    height: 70px;
+}
+.explore{
+    height: 26px;
+}
+.box-image>img{
+    padding: 0;
+}
 
+.box-image>img:hover{
+    position: relative;
+    padding: 0;
+    top: -100%;
+}
 .info2{
     display: flex;
     flex-direction: row;
