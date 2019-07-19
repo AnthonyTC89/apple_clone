@@ -15,8 +15,7 @@ body {
 main{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    
+    align-items: center;
 }
 
 footer{
@@ -26,20 +25,20 @@ footer{
     width: 60rem;
     color: #a0a0a0;
 }
-/* First Section */
+
+/* Nav-bar Section */
 
 .nav-bar{
-    margin-top: 0.8rem;
+    position: absolute;
     display: inline-flex;
     border: 0.5px solid #585858;
     border-radius: .2rem;
+    margin-top: 1rem;
 }
-
 .nav-bar>ul{
     list-style: none;
     display: inline-flex;
 }
-
 .nav-bar>ul>li{
     display: block;
     padding: 0.3rem 2rem;
@@ -48,11 +47,9 @@ footer{
     border-right: 0.5px solid #585858;
     
 }
-
 .nav-bar>ul>li:nth-child(6){
     background: radial-gradient(#111111, #393939);
 }
-
 .nav-bar>ul>li:hover{
     cursor: pointer;
     background: linear-gradient(#575757,#575757, #252525,#252525)
@@ -62,7 +59,6 @@ footer{
     background: linear-gradient(#808080,#808080, #4D4D4D,#4D4D4D);
     cursor: default;
 }
-
 .nav-bar>ul>li:nth-child(6):hover{
     background: radial-gradient(#111111, #393939);
 }
@@ -101,59 +97,49 @@ footer{
     outline:none;
     width: 10rem;
 }
-.main-header{
-    position: relative;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    line-height: 1.8rem;
-    padding-bottom: 5rem;
-}
 
-.main-header>a>div{
-    text-align: center;
-    margin-top: 5rem;
-    width: 40rem;
-    color: black;
-    text-decoration: none;
-}
-
-.main-header>a>div>h2{
-    font-size: 3.2rem;
-    margin-bottom: 1.8rem;
-    font-weight: lighter;
-}
-
-.main-header>img{
-    position: absolute;
-}
-
-.main-header>a>div>p{
-    font-size: 1.1rem;
-    font-weight: lighter;
-}
-
-.main-header>a>div>h3{
-    font-size: 1.1rem;
-    font-weight: lighter;
-    margin: 1rem auto;
-}
-
-    
-.main-header>div>a>img{
-    position: relative;
-    top:50%;
-}
-
+/* main Section*/
 
 .background-image{
-    position: absolute;
-    z-index: -999;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.background-image[id="hero"]{
+    padding-top: 9rem;
+    background-image: url("../images/hero.jpg");
+    height: 621px;
+    width: 1440px;
+}
+.background-image[id="expedition_hero"]{
+    background-image: url("../images/expedition_hero.jpg");
+    height: 578px;
+    width: 1440px;
+}
+.background-image[id="newdepths_hero"]{
+    background-image: url("../images/newdepths_hero.jpg");
+    height: 578px;
+    width: 1440px;
 }
 
+.background-image>img{
+    margin: 0 auto;
+}
+.img-text{
+    padding: 1rem;
+}
+.img-play{
+    padding: 1rem;
+}
+.img-double{
+    padding: 2rem;
+}
+.info1{
+    margin:.1rem auto;
+}
 
-.box-play{
+/* .box-play{
     display: inline-block;
     width: 70px;
     height: 70px;
@@ -163,63 +149,20 @@ footer{
     position: relative;
     top: -100%;
     cursor: pointer;
-}
-
-.info1{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    padding-top: 13.2rem;
-    padding-bottom: 10rem;
-}
-.info1:hover{
-    cursor: pointer;
-}
-
-.info1>div{
-    width: 40rem;
-    color: #e4e4e4;
-    font-weight: 100;
-}
-.info1>div>h2{
-    font-size: 1.8rem;
-}
-
-.info1>div>p{
-    font-size: 1rem;
-    line-height: 1.7em;
-}
-.info1>div>a{
-    display: block;
-    margin: 1rem auto;
-    text-decoration: none;
-    color: #e4e4e4;
-}
-
-.info1>div>a:hover{
-    color: white;
-}
+} */
 
 .info2{
     display: flex;
     flex-direction: row;
     width: 60rem;
-    margin-top: 3rem;
-    margin-bottom: 0.7rem;
-    margin-right: auto;
-    margin-left: auto;
-    justify-content: center;
+    margin-top: 1rem;
 }
 
 .info2-right{
    max-width: 25rem;
-   margin-left: 2rem;
+   margin-left: 3rem;
    font-size: 1rem;
 }
-
 
 .info2-right>h2{
     font-size: 1.5rem;
@@ -295,7 +238,6 @@ footer{
 }
 
 .footer-info>p{
-    display: block;
     margin-right: 5rem;
     font-size: .6rem;
 }
@@ -319,7 +261,6 @@ footer{
     padding-left: 1rem;
     margin-left: 1rem;
     border-left: 1px solid #e4e4e4;
-    
 }
 
 .footer-list>li:first-child{
@@ -334,8 +275,6 @@ footer{
     text-decoration: underline;
 }
 
-
-
 .footer-info>ul>li>a>img{
     width: 1.2rem;
 }
@@ -343,7 +282,4 @@ footer{
     font-size: .6rem;
     display: flex;
     align-content: space-between;
-}
-.footer-copyright>p{
-    display: block;
 }
