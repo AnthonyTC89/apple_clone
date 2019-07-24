@@ -21,8 +21,8 @@ main{
 footer{
     display: flex;
     flex-direction: column;
-    margin: 0 auto 3rem auto;
-    width: 60rem;
+    margin: .2rem auto 3rem auto;
+    width: 85rem;
     color: #a0a0a0;
 }
 
@@ -30,7 +30,7 @@ footer{
 
 .nav-bar{
     position: absolute;
-    display: inline-flex;
+    display: flex;
     border: 0.5px solid #585858;
     border-radius: .2rem;
     margin-top: 6.5rem;
@@ -97,29 +97,52 @@ footer{
 /* main Section*/
 
 .background-image{
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 1440px;
-    
+    background-repeat:no-repeat;
+}
+.header{
+    margin: 0 auto;
+    width: 980px;
+}
+.title_small{
+    background-image: url("../images/your_verse_title_small.png");
+    height: 82px;
+}
+.subhead_small{
+    background-image: url("../images/your_verse_subhead_small.png");
+    height: 82px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.cta_27pt{
+    background-image: url("../images/cta_your_verse_27pt.png");
+    height: 32px;
+}
+.cta_27pt:hover{
+    background-position-y: bottom;
 }
 .hero{
     background-image: url("../images/your_verse_hero.jpg");
-    height: 35rem;
-    background-repeat:no-repeat;
     background-position-y: bottom;
+    background-position-x: center;
+    height: 35rem;
+    width: 85rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 5rem;
 }
 .info-list{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    width: 85rem;
 }
 
 .info{
     height: 200px;
-    width: 355px;
+    width: 21rem;
     background-repeat:no-repeat;
-    margin:0.2rem;
+    
 }
 .info[id ="iphone5s"]{
     background-image: url("../images/promo_iphone5s.jpg");
@@ -137,28 +160,14 @@ footer{
     background-image: url("../images/promo_supplier_responsibility.jpg");
 }
 
-.background-image>img{
-    margin: 0 auto;
-}
-
-.box-image{
-    overflow: hidden;
-    text-align: center;
-    margin-top: 2rem;
-    height: 32px;
-}
-.box-image>img:hover{
-    position: relative;
-    padding: 0;
-    top: -100%;
-}
-
 /*Footer Section */
 
 .footer-info{
     display: flex;
     align-content: space-between;
     padding: 1rem 0rem 0.5rem 0rem;
+    width: 70%;
+    margin: 0 auto;
 }
 
 .footer-info>p{
@@ -206,4 +215,6 @@ footer{
     font-size: .6rem;
     display: flex;
     align-content: space-between;
+    width: 70%;
+    margin: 0 auto;
 }
