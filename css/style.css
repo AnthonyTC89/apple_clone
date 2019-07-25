@@ -1,0 +1,220 @@
+/* base styles */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; 
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    color: black;
+    box-sizing: border-box; 
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    margin: .2rem auto 3rem auto;
+    width: 85rem;
+    color: #a0a0a0;
+}
+
+/* Nav-bar Section */
+
+.nav-bar{
+    position: absolute;
+    display: flex;
+    border: 0.5px solid #585858;
+    border-radius: .2rem;
+    margin-top: 6.5rem;
+}
+.nav-bar>ul{
+    list-style: none;
+    display: inline-flex;
+}
+.nav-bar>ul>li{
+    display: block;
+    padding: 0.3rem 2.2rem;
+    background: #808080;
+    background: linear-gradient(#808080,#808080, #4D4D4D,#4D4D4D);
+    border-right: 0.5px solid #585858;
+    
+}
+
+.nav-bar>ul>li:hover{
+    cursor: pointer;
+    background: linear-gradient(#575757,#575757, #252525,#252525)
+}
+.nav-bar>ul>li:last-child{
+    border-right: none;
+    background: linear-gradient(#808080,#808080, #4D4D4D,#4D4D4D);
+    cursor: default;
+}
+
+.nav-bar>ul>li>a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: .8rem;
+    font-weight: 100;
+}
+.nav-bar>ul>li>a>img{
+    display: block;
+    margin-top: .1rem;
+    background: linear-gradient(#858585,#858585, #767676,#767676);
+}
+.nav-bar>ul>li>img{
+    position: absolute;
+    margin-top: .5rem;
+    margin-left: .2rem;
+    width: .7rem;
+}
+.nav-bar>ul>li>input{
+    display: flex;
+    background: linear-gradient(#858585,#858585, #767676,#767676);
+    border-top: .5px solid #4a4a4a;
+    border-bottom: .5px solid #878787;
+    border-radius: 10px;
+    border-right: .2px solid #4a4a4a;
+    border-left: .2px solid #4a4a4a;
+    padding-left: 1rem;
+    margin-top: .4rem;
+    width: 5rem;
+    transition: width 0.4s ease-in-out;
+}
+.nav-bar>ul>li>input:focus{
+    background: white;
+    outline:none;
+    width: 10rem;
+}
+
+/* main Section*/
+
+.background-image{
+    background-repeat:no-repeat;
+}
+.header{
+    margin: 0 auto;
+    width: 980px;
+}
+.title_small{
+    background-image: url("../images/your_verse_title_small.png");
+    height: 82px;
+}
+.subhead_small{
+    background-image: url("../images/your_verse_subhead_small.png");
+    height: 82px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.cta_27pt{
+    background-image: url("../images/cta_your_verse_27pt.png");
+    height: 32px;
+}
+.cta_27pt:hover{
+    background-position-y: bottom;
+}
+.hero{
+    background-image: url("../images/your_verse_hero.jpg");
+    background-position-y: bottom;
+    background-position-x: center;
+    height: 35rem;
+    width: 85rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 5rem;
+}
+.info-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 85rem;
+}
+
+.info{
+    height: 200px;
+    width: 21rem;
+    background-repeat:no-repeat;
+    
+}
+.info[id ="iphone5s"]{
+    background-image: url("../images/promo_iphone5s.jpg");
+}
+
+.info[id ="iphone5c"]{
+    background-image: url("../images/promo_iphone5c.jpg");
+}
+
+.info[id ="30_years"]{
+    background-image: url("../images/promo_30_years.jpg");
+}
+
+.info[id ="supplier_responsibility"]{
+    background-image: url("../images/promo_supplier_responsibility.jpg");
+}
+
+/*Footer Section */
+
+.footer-info{
+    display: flex;
+    align-content: space-between;
+    padding: 1rem 0rem 0.5rem 0rem;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.footer-info>p{
+    margin-right: 1rem;
+    font-size: .6rem;
+}
+.footer-info>p>a{
+    text-decoration: none;
+    color: #1f86c2;
+}
+
+.footer-info>p>a:hover{
+    text-decoration: underline;
+}
+
+.footer-list{
+    list-style: none;
+    font-size: .6rem;
+    display: flex;
+    justify-items: center;
+}
+
+.footer-list>li{
+    padding-left: 0.6rem;
+    margin-left: 0.6rem;
+    border-left: 1px solid #e4e4e4;
+}
+
+.footer-list>li:first-child{
+    border-left: none;
+}
+
+.footer-list>li>a{
+    text-decoration: none;
+    color: #1f86c2;
+}
+.footer-list>li>a:hover{
+    text-decoration: underline;
+}
+
+.language-image{
+    width: 1.2rem;
+}
+.footer-copyright{
+    font-size: .6rem;
+    display: flex;
+    align-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+}
