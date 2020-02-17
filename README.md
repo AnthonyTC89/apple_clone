@@ -1,5 +1,5 @@
 <p align="center">
-  <h1 align="center">DESIGN TEARDOWN</h1>
+  <h1 align="center">APPLE CLONE, BACKGROUND AND GRADIENTS</h1>
 
   <p align="center">
     Project Create with HTML and CSS
