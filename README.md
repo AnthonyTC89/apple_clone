@@ -5,7 +5,7 @@
     Project Create with HTML and CSS
     <br>
     <br>
-    <a href="https://github.com/AnthonyTC89/apple_clone/" target="_blank">Live Demo</a>
+    <a href="https://anthonytc89.github.io/apple_clone/" target="_blank">Live Demo</a>
     .
     <a href="https://github.com/AnthonyTC89/apple_clone/issues">Report Bug</a>
     ·
